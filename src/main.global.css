@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./fonts/Trebuchet MS Bold.woff2') format('woff2'),
+       url('./fonts/Trebuchet MS Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./fonts/Trebuchet MS Regular.woff2') format('woff2'),
+       url('./fonts/Trebuchet MS Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('./fonts/Exo2-Thin.woff2') format('woff2'),
+       url('./fonts/Exo2-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+:root {
+  --color-text: #666666;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-main: #1698D9;
+  --color-hover: #2EA8E6;
+  --color-select: #D91667;
+  --color-select-hover: #E52E7A;
+  --color-disable: 	#4d4d4d;
+  --color-yellow: #FFFF66;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+
+body {
+  height: 100vh;
+  background-image: url(./img/Pattern.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100vh);
+  background-size: cover;
+}
+
+h1 {
+  padding: 0;
+}
+
+h2 {
+  padding: 0;
+}
+
+a {
+  color: var(--color-main);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+

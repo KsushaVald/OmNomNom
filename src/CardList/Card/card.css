@@ -1,0 +1,160 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cardContainer:not(:last-child) {
+  padding-right: 10px;
+}
+
+
+.card {
+  position: relative;
+  margin-bottom: 18px;
+  max-width: 312px;
+  min-height: 472px;
+  padding-top: 17px;
+  padding-left: 48px;
+  padding-right: 57px;
+  border-radius: 8px;
+  cursor: pointer;
+  background:  url(../../img/cat.png) left -3px bottom -5px no-repeat, linear-gradient(135deg, transparent 28px, var(--color-white) 0) top left;
+}
+
+.border {
+  top: -4px;
+  left: -4px;
+  position: absolute;
+  z-index: -10;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: 9px;
+  background: linear-gradient(135deg, transparent 29px, var(--color-main) 0);
+}
+
+.borderHover {
+  background: linear-gradient(135deg, transparent 29px, var(--color-hover) 0);
+}
+
+.borderSelect {
+  background: linear-gradient(135deg, transparent 29px, var(--color-select) 0);
+}
+
+.borderSelectHover {
+  background: linear-gradient(135deg, transparent 29px, var(--color-select-hover) 0);
+}
+
+.cardTopText {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-subtext);
+}
+
+.cardTopTextSelect {
+  color: var(--color-select-hover);
+}
+
+
+.cardHeader {
+  margin-left: -4px;
+  font-family: 'Trebuchet MS';
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.cardSubheader {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.cardSpanText {
+  display: block;
+  max-width: 127px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-subtext);
+}
+
+.cardSpanLabel {
+  display: block;
+  position: absolute;
+  padding-top: 7px;
+  right: 12px;
+  bottom: 12px;
+  width: 80px;
+  height: 80px;
+  font-size: 42px;
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-main);
+}
+
+.cardSpanLabelHover {
+  background-color: var(--color-hover);
+}
+
+.cardSpanLabeltext {
+  margin-top: -7px;
+  font-size: 22px;
+}
+
+.cardNote {
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--color-white);
+}
+
+.cardLink {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.cardNoteDisable {
+  color: var(--color-yellow);
+}
+
+.cardSpanLabelSelect {
+  background-color: var(--color-select);
+}
+
+.cardSpanLabelSelectHover {
+  background-color: var(--color-select-hover);
+}
+
+.cover {
+  position: absolute;
+  top: -4px;
+  width: 320px;
+  height: 480px;
+  z-index: 100;
+  opacity: 0.5;
+  border-radius: 12px;
+  background: linear-gradient(135deg, transparent 29px, var(--color-white) 0) top left;
+}
+
+.cardSpanLabelDisable {
+  background-color: var(--color-disable);
+}
+
+.borderDisable {
+  background: linear-gradient(135deg, transparent 29px, var(--color-disable) 0);;
+}
+
+@media (max-width: 1024px) {
+  .cardContainer:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .cardContainer:not(:last-child) {
+    padding-right: 0;
+  }
+}
